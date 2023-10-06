@@ -10,20 +10,22 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: url('https://www.freepik.com/free-vector/halftone-background-with-circles_13295064.htm#query=portfolio%20background&position=3&from_view=keyword&track=ais') no-repeat center center fixed;
+            background: url('https://www.freepik.com/free-photo/halftone-background_13295070.htm') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             padding: 0;
             color: #333;
+        }
 
         header {
-               background-color: #007bff;
+            background-color: #007bff;
             color: #fff;
             text-align: center;
             padding: 20px 0;
             font-family: 'Allura', cursive;
             font-size: 36px;
         }
+
         nav {
             background-color: #333;
         }
@@ -36,20 +38,18 @@
         }
 
         section {
-           margin: 20px;
+            margin: 20px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-       
         h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-
 
         .projects {
             display: flex;
@@ -88,7 +88,7 @@
             <p class="lead">DevOps Engineer</p>
         </div>
     </header>
-  
+
     <nav class="container mt-2">
         <a href="#about">About Me</a>
         <a href="#contact">Contact Details</a>
@@ -97,7 +97,7 @@
         <a href="#skills">Skills</a>
     </nav>
 
-    <section class="container mt-4">
+    <section id="about" class="container mt-4">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h2>About Me</h2>
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="container mt-4">
+    <section id="contact" class="container mt-4">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h2>Contact Details</h2>
@@ -129,104 +129,31 @@
         </div>
     </section>
 
-    <section class="container mt-4">
+    <section id="projects" class="container mt-4">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h2>Projects</h2>
-
-                <div class="project">
-                    <h3>Automated CI/CD Pipeline for Web Application</h3>
-                    <p>
-                        Implemented a CI/CD pipeline integrating GitHub, AWS, Docker, Jenkins, and GitHub webhooks.
-                        Automated stages include Code, Build, Test, and Deploy. Key tools used: Jenkins, GitHub, AWS,
-                        Docker. Ensured automatic pipeline execution triggered by GitHub events.
-                    </p>
-                    <ul>
-                        <li>Jenkins Configuration for CI/CD</li>
-                        <li>Integration with GitHub for version control</li>
-                        <li>AWS EC2 Instance for hosting</li>
-                        <li>Docker for containerization</li>
-                        <li>GitHub Webhook integration</li>
-                    </ul>
-                </div>
-
-                <div class="project">
-                    <h3>Deploying a Java Spring Boot Application on Kubernetes (K8S)</h3>
-                    <p>
-                        Orchestrated the deployment of a sophisticated Spring Boot application on Kubernetes.
-                        Established a resilient cloud server environment, integrated a database, and managed Docker image
-                        creation and deployment.
-                    </p>
-                    <ul>
-                        <li>Infrastructure setup on AWS</li>
-                        <li>Deployment of Spring Boot application on Kubernetes</li>
-                        <li>Integration with Docker for containerization</li>
-                        <li>Effective use of Kubernetes manifest files</li>
-                        <li>Thorough testing using Postman and Mini-Kube dashboard</li>
-                    </ul>
-                </div>
-
-                <div class="project">
-                    <h3>Jenkins Pipeline for Java based application using Maven, SonarQube, and Kubernetes</h3>
-                    <p>
-                        Constructed a declarative CI/CD pipeline using Jenkins, Maven, SonarQube, Docker, and Kubernetes.
-                        The pipeline covers build, test, code quality analysis, Docker image creation, and Kubernetes deployment.
-                    </p>
-                    <ul>
-                        <li>Automation of build and test stages with Jenkins and Maven</li>
-                        <li>Code quality analysis using SonarQube</li>
-                        <li>Docker image creation and management</li>
-                        <li>Declarative approach for enhanced version control</li>
-                        <li>End-to-End flow from code compilation to Kubernetes deployment</li>
-                    </ul>
-                </div>
-
-                <div class="project">
-                    <h3>Deploy Multi-Container Application with 5 Different Services</h3>
-                    <p>
-                        Orchestrated a multi-container application using Docker Compose, comprising three custom-built containers
-                        and two containers from official Docker images. Each container includes a health check for ensuring proper
-                        application functionality.
-                    </p>
-                    <ul>
-                        <li>Creation of a web application for conducting polls</li>
-                        <li>Utilization of Redis, PostgresDB, Vote, Worker, and Result containers</li>
-                        <li>Implementation of Docker Compose for deployment</li>
-                        <li>Health checks for each container</li>
-                        <li>Scalable and efficient solution for conducting polls</li>
-                    </ul>
-                </div>
-
+                <!-- Your Projects content here -->
             </div>
         </div>
     </section>
 
-    <section class="container mt-4">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2>Skills</h2>
-                <div class="skills">
-                    <ul>
-                        <li>Amazon Web Services - IAM , Amazon EC2, S3 , VPC, Lambda, RDS, dynamodb, Elastic Beanstalk, CloudWatch, Amazon SQS and SNS , AutoScaling, Cloud Formation </li>
-                        <li>Git</li>
-                        <li>Ansible</li>
-                        <li>Jenkins CI/CD</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Linux</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mt-4">
+    <section id="resume" class="container mt-4">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h2>Resume</h2>
                 <p>
-                    You can find my resume <a href="https://drive.google.com/file/d/17EONuVqmy1-zFtXAnVZxI_FED_xgTmGw/view?usp=drivesdk" target="_blank">https://drive.google.com/file/d/17EONuVqmy1-zFtXAnVZxI_FED_xgTmGw/view?usp=drivesdk</a>.
+                    You can find my resume <a href="https://drive.google.com/file/d/17EONuVqmy1-zFtXAnVZxI_FED_xgTmGw/view?usp=drivesdk" target="_blank">here</a>.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Skills</h2>
+                <!-- Your Skills content here -->
             </div>
         </div>
     </section>
