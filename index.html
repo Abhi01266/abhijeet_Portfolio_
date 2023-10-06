@@ -163,9 +163,27 @@ Collaborative Development:
 This project is an immersive journey into the modern software development, showcasing the power of automation and orchestration in delivering high-quality applications seamlessly and consistently across production environments..</p>
                  
         </div>
-    </section>
+             <div class="project">
+                <h3>Project 4- Deploy Multi-Container Application with 5 Different
+Services</h3>
+                <p>deploy a multi-container application using a docker-compose.yml
+file through my Docker-Compose project. We'll be building three
+containers from Dockerfile and two containers from official Docker
+images. Each container also has a health check that helps ensure
+the application is running correctly.
+                    Project Overview:
+This project is a web application designed to create a poll for the Popular Container Orchestration Tool using the Vote app [Python-based]. The application collects user choices and stores them on a Redis server. A Worker app [Python-based] then collects the data from the Redis server, processes the data to create poll results, and stores the result data in a Postgres database server. Finally, the Result app [NodeJs] retrieves data from the Postgres server and displays the poll results. This application provides an interface to conduct polls, and with the help of Docker Compose, it deploys multiple containerized services, making it a scalable and efficient solution for conducting polls.
+Let's understand in brief how these five containers work with each other to process the User data---->
+1. Vote App: This App is built in Python and uses the Streamlit and Redis libraries. It hosts a web application to collect poll data and connects to the Redis server to direct that data.
+2. Redis: It is a key-value store used to store and retrieve data. This Redis container takes Poll entries by the user and stores them in-memory cache to use further.
+3. Worker App: This App is built in Python and uses the Redis and psycopg2 libraries. It collects the poll data from the Redis server, processes the data to create poll results, and directs the result data to a Postgres database server.                 
+4. Postgres DB: It is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications. The poll result from the Worker app is stored in this container. Postgres can handle databases ranging from a few gigabytes to several terabytes in size.            
+5. Result App: This App is built in Javascript and uses the express and pg libraries. It connects to the Postgres database server to retrieve that result data and hosts a web application to show poll results.   
 
-    <section id="skills">
+       This Project describes the deployment of a multi-container application by using the docker-compose.yml file for a project that comprises five services: Redis, PostgresDB, Vote, Worker, and Result. This multi-container application project demonstrates the power of using Docker Compose for deploying complex applications. By leveraging the containerization technology provided by Docker, the application can be easily managed and scaled to meet the needs of a growing user base. Additionally, the use of health-checks helps ensure that the application is running correctly.</p>
+   </div>
+             </section>
+                 <section id="skills">
         <h2>Skills</h2>
         <div class="skills">
             <ul>
